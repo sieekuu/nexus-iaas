@@ -1,0 +1,129 @@
+/*
+ * Nexus-IaaS Custom Styles
+ * Copyright (c) 2026 Krzysztof Siek
+ * Licensed under the MIT License.
+ */
+
+:root {
+    --nexus-primary: #238636;
+    --nexus-bg-dark: #0d1117;
+    --nexus-bg-secondary: #161b22;
+    --nexus-border: #30363d;
+    --nexus-text: #e6edf3;
+    --nexus-text-muted: #7d8590;
+}
+
+body {
+    font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', 'Noto Sans', Helvetica, Arial, sans-serif;
+    background: var(--nexus-bg-dark);
+    color: var(--nexus-text);
+}
+
+/* Custom scrollbar */
+::-webkit-scrollbar {
+    width: 10px;
+    height: 10px;
+}
+
+::-webkit-scrollbar-track {
+    background: var(--nexus-bg-dark);
+}
+
+::-webkit-scrollbar-thumb {
+    background: var(--nexus-border);
+    border-radius: 5px;
+}
+
+::-webkit-scrollbar-thumb:hover {
+    background: #484f58;
+}
+
+/* Card animations */
+.card {
+    transition: all 0.3s ease;
+}
+
+.card:hover {
+    box-shadow: 0 0 20px rgba(35, 134, 54, 0.2);
+}
+
+/* Button hover effects */
+.btn {
+    transition: all 0.2s ease;
+}
+
+.btn-primary {
+    background: var(--nexus-primary);
+    border-color: var(--nexus-primary);
+}
+
+.btn-primary:hover {
+    background: #2ea043;
+    border-color: #2ea043;
+    transform: translateY(-1px);
+    box-shadow: 0 4px 8px rgba(35, 134, 54, 0.3);
+}
+
+/* Status badges */
+.badge {
+    padding: 0.35em 0.65em;
+    font-weight: 600;
+    border-radius: 4px;
+}
+
+/* Table enhancements */
+.table-dark {
+    --bs-table-bg: transparent;
+}
+
+.table-dark tbody tr {
+    transition: background-color 0.2s ease;
+}
+
+.table-dark tbody tr:hover {
+    background: rgba(35, 134, 54, 0.1);
+}
+
+/* Form controls */
+.form-control:focus,
+.form-select:focus {
+    border-color: var(--nexus-primary);
+    box-shadow: 0 0 0 0.25rem rgba(35, 134, 54, 0.25);
+}
+
+/* Loading animation */
+.spinner-border {
+    border-color: var(--nexus-primary);
+    border-right-color: transparent;
+}
+
+/* Alert improvements */
+.alert {
+    border-left: 4px solid;
+    border-radius: 6px;
+}
+
+.alert-success {
+    border-left-color: var(--nexus-primary);
+}
+
+.alert-danger {
+    border-left-color: #da3633;
+}
+
+.alert-warning {
+    border-left-color: #f59e0b;
+}
+
+.alert-info {
+    border-left-color: #3b82f6;
+}
+
+/* Responsive utilities */
+@media (max-width: 768px) {
+    .sidebar {
+        min-height: auto !important;
+        border-right: none;
+        border-bottom: 1px solid var(--nexus-border);
+    }
+}

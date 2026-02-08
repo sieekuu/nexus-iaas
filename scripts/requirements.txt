@@ -1,0 +1,8 @@
+# Nexus-IaaS Python Requirements
+# Copyright (c) 2026 Krzysztof Siek
+# Licensed under the MIT License.
+#
+# Install with: pip install -r requirements.txt
+
+proxmoxer>=2.0.1
+requests>=2.31.0

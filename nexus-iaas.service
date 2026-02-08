@@ -1,0 +1,27 @@
+[Unit]
+Description=Nexus-IaaS Worker Daemon
+After=network.target mysql.service
+
+[Service]
+Type=simple
+User=www-data
+Group=www-data
+WorkingDirectory=/var/www/nexus-iaas
+ExecStart=/usr/bin/php /var/www/nexus-iaas/scripts/worker.php
+Restart=always
+RestartSec=10
+StandardOutput=append:/var/log/nexus-iaas/worker.log
+StandardError=append:/var/log/nexus-iaas/worker-error.log
+
+# Environment
+Environment="PATH=/usr/bin:/usr/local/bin"
+
+# Security
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ProtectHome=true
+ReadWritePaths=/var/www/nexus-iaas /var/log/nexus-iaas
+
+[Install]
+WantedBy=multi-user.target
