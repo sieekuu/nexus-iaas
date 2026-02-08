@@ -592,8 +592,7 @@ php scripts/worker.php
 
 ### Reporting Security Issues
 
-Email security issues to: security@yourdomain.com
-
+Email security issues to: krzysiek@sieekuu.xyz
 ---
 
 ## 📄 License
@@ -632,4 +631,5 @@ For enterprise support, custom development, or consulting:
 ⭐ Star this project if you find it useful!
 
 </div>
+
 
