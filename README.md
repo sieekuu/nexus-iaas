@@ -621,7 +621,7 @@ Licensed under the MIT License. See [LICENSE](LICENSE) file for details.
 
 For enterprise support, custom development, or consulting:
 
-📧 Email: support@yourdomain.com
+📧 Email: krzysiek@sieekuu.xyz
 
 ---
 
@@ -632,3 +632,4 @@ For enterprise support, custom development, or consulting:
 ⭐ Star this project if you find it useful!
 
 </div>
+
